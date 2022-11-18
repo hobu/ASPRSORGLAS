@@ -1,0 +1,41 @@
+name: Community VLR
+description: Describe a VLR in use in the community
+title: "[VLR]: "
+labels: ["vlr"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please enter a description of a community LAS VLR
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Who knows about this VLR and could answer questions about it?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: user_id
+    attributes:
+      label: LAS User ID
+      description: The LAS User ID in use for this VLR
+    validations:
+      required: true
+  - type: checkboxes
+    id: is_registered
+    attributes:
+      label: Is the LAS User ID registered and reflected in the [Key List](https://www.asprs.org/misc/las-key-list.html). If not, contact @esilvia for details how to do so.
+      options:
+        - label: Registered?
+  - type: textarea
+    id: record_id
+    attributes:
+      label: LAS Record ID
+      description: The LAS Record ID in use for this VLR
+    validations:
+      required: true
+  - type: textarea
+    id: application
+    attributes:
+      label: What application(s) is the VLR used with?
