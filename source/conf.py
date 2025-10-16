@@ -58,7 +58,7 @@ project = u'LAS Specification'
 copyright = u'%Y, ASPRS'
 author = u'ASPRS'
 html_logo = './_static/asprslogo45.png'
-html_short_title = "Amazing Docs"
+html_short_title = "ASPRS LAS Specification"
 theme_banner_text=False
 html_theme_path = ["html_themes"]
 
